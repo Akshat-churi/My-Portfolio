@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        header{
+    background-color:rgb(44, 40, 40);
+    color:#fff;
+    padding: 50px;
+    text-align: center;
+    }
+    .b{
+        height: 8px;
+        width: 80px;
+        background-color:rgb(217, 62, 62)  ;
+    }
+    header h1{
+        font-size: 2.5em;
+        margin=0;
+    }
+        body, html{
+            scroll-behavior: smooth;
+            overflow:auto;
+        position: relative;  
+        }
+        nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        background: #444;
+        padding: 10px;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+    }
+    nav a:hover {
+        background: #555;
+    }
+        section {
+            padding: 100px 20px;
+            text-align: center;
+            min-height: 100vh;animation: moveUp 1s ease-out forward;
+
+        }
+        #home {
+            background-image:url("travel_HD.jpg") ;
+        }
+#gallery{
+    background-color: white;
+}
+        #about {
+            background: whitesmoke;
+        }
+        .container{  
+        margin:20px auto;
+        padding:20px;
+        max-width:800px;
+        color:white;
+            background-color:rgb(217, 62, 62) ;
+        border-radius:10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);    
+    }
+.gallery img{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    
+}
+        #contact {
+            background: whitesmoke;
+            animation: moveUp 1s ease-out forward;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+
+        }
+        input, textarea {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+        }
+        button {
+            padding: 15px 20px;
+            
+            background: rgb(217, 62, 62);
+            color: white;
+            border: none;
+            cursor: pointer;  
+        }
+        #s{
+            background-image: url("map.jpg");
+        }
+        .c2{
+        margin:20px auto;
+        padding:20px;
+        max-width:700px;
+        background-color:rgb(217, 62, 62);
+        border-radius:10px;
+        color: #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: rgb(44, 40, 40);
+        color: #fff;
+        
+        bottom: 0;
+        width: 100%;
+    }          
+     #splash {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index:3; 
+      width: 100%;
+      height: 100%;
+      background:rgb(217, 62, 62); /* Background color */
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+    }
+    @keyframes moveUp{
+        0%{transform:translateY(100px); opacity:1;}
+        100%{transform:translateY(0);opacity:1;}
+    }
+.animated{
+    animation: moveUp 4s ease-out forwards;
+}
+    </style>
+</head>
+<body bgcolor="white">
+    <div id="splash">Loading...</div>
+    <header>
+        <h1>
+            <b>
+            My Portfolio
+            </b>
+        </h1>
+        <br>
+        <p>Created and devloped by Akshat.A.Churi</p>
+</header>
+        <nav>
+                <a href="#home"><u>Home</u></a>
+                <a href="#about"><u>About  </u></a>
+                <a href="#gallery"><u>Gallery</u></a>
+                <a href="#contact"><u>Contact</u></a>      
+        </nav>
+    <section id="home">
+        <div class="animated">
+        <br>
+        <br>
+        <h2>Welcome to my website!</h2>
+        <br>
+        <br>
+        <center>
+        <div class="b"></div>
+</center>
+<br>
+        <br>
+        <br>
+        <p>This is a personal website also known as a portfolio.</p>
+        <p>It showcases my skills, talent, interests and personality.</p>
+        <br>
+        <br>
+        <br>
+        <h3><a href="#about"><button><b>Read More</b></button></a></h3>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <br>
+        <center>
+        <div class="b"></div>
+        </center>
+        <br>
+        <br>
+        <hr color="brown" >
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <h3>Name:Akshat Ashish Churi</h3>
+            <br>
+        <p>Hello! I am a frontend developer with experience in HTML, CSS, and JavaScript. I love building interactive and user-friendly websites.Now I am studying Computer Engineering in Fr. crce bandra.I am passionate about learning new things and exploring new places.My hobbies are drawing,cycling and traveling.I am good at learning and hardworking.My weak points are laziness and not having discipline.</p>
+        </div>
+        <div class="container">
+            <h3>Project 1</h3>
+            <br>
+            <p>A modern website built with React.js.</p>
+        </div>
+        <div class="container">
+            <h3>Project 2</h3>
+            <br>
+            <p>A responsive e-commerce site using HTML, CSS, and JavaScript.</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <hr color="brown">      
+</section>
+<section id="gallery">
+    <h2>Gallery</h2>
+    <br>
+    <center>
+    <div class="b"></div>
+    </center>
+    <br>
+    <br>
+    <br>
+    <div class="c2">   
+         <div class="gallery">
+        <center>
+            <a href="https://www.bing.com/ck/a?!&&p=9212816d0d83ae969c0cfd6baf7e0090d058ae4d1df939c79cf7c2c326524cc6JmltdHM9MTc0MjI1NjAwMA&ptn=3&ver=2&hsh=4&fclid=10098c0e-13d5-6990-2ecb-9971121c6863&psq=youtube.com&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20v&ntb=1">
+        <img src="akuu.jpg" height="70%" width="50%" ></a>
+        <a href="https://www.bing.com/ck/a?!&&p=9212816d0d83ae969c0cfd6baf7e0090d058ae4d1df939c79cf7c2c326524cc6JmltdHM9MTc0MjI1NjAwMA&ptn=3&ver=2&hsh=4&fclid=10098c0e-13d5-6990-2ecb-9971121c6863&psq=youtube.com&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20v&ntb=1">
+        <img src="churi.jpg" height="80%" width="40%"></a>
+        <h3>Images</h3>
+        </center>
+      </div>  
+    </div>
+    <br>
+    <br>
+    <center>
+    <h3><a href="#contact"><button><b>Learn More</b></button></a></h3>
+    </center>
+</section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <br>
+        <br>
+        <center>
+            <div class="b"></div>
+            </center>
+            <br>
+            <br>
+            <form action="https://api.web3forms.com/submit" method="POST">             
+                <input type="hidden" name="access_key" value="d5eea636-2334-4db1-9387-ed457844c783">         
+                <input type="text" name="name" required placeholder="Your Name ">
+                <input type="email" name="email" required placeholder="Your Email">
+                <textarea name="message" required placeholder="Your Message"></textarea>              
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">      
+                <button type="submit">Send</button>        
+        </form>     
+    </section>
+    <section id="s">      
+    </section> 
+    <footer>© 2025 My First Website | all rights reserved!       
+    <br>
+    Powered by AK website devlopers.</footer>   
+    <script>
+          setTimeout(() => {
+   document.getElementById('splash').style.display = 'none';
+    }, 3000);       
+    </script>
+</body>
+</html>
